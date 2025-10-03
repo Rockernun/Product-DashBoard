@@ -37,15 +37,11 @@ public class BasicItemController {
     }
 
     @PostMapping("/add")
-    public String addItemV1(@RequestParam String name, @RequestParam int price, @RequestParam Integer quantity, Model model) {
-        Item item = new Item();
-        item.setName(name);
-        item.setPrice(price);
-        item.setQuantity(quantity);
+    public String addItemV2(@ModelAttribute("item") Item item) {
 
         itemRepository.save(item);
+//        model.addAttribute("item", item); // 생략 가능
 
-        model.addAttribute("item", item);
         return "/basic/item";
     }
 
