@@ -2,6 +2,7 @@ package hello.itemservice.domain.item;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * FAST: 총알 배송
@@ -10,6 +11,7 @@ import lombok.Data;
  */
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class DeliveryCode {
 
     private String code;
