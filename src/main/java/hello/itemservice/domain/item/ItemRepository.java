@@ -36,6 +36,10 @@ public class ItemRepository {
         findItem.setName(updateParam.getName());
         findItem.setPrice(updateParam.getPrice());
         findItem.setQuantity(updateParam.getQuantity());
+        findItem.setStatus(updateParam.getStatus());
+        findItem.setRegions(updateParam.getRegions());
+        findItem.setType(updateParam.getType());
+        findItem.setDeliveryCode(updateParam.getDeliveryCode());
     }
 
     // 저장소 초기화
